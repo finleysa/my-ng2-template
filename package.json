@@ -1,0 +1,52 @@
+{
+  "name": "Ng2 Template",
+  "version": "1.0.0",
+  "description": "Angular2 Gulp Typescript and Express",
+  "main": "dist/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "gulp build",
+    "start": "concurrent \"gulp\" \"nodemon dist/server.js\" \"mongod\" "
+  },
+  "keywords": [],
+  "author": "Steven Finley",
+  "license": "MIT",
+  "dependencies": {
+    "angular2": "2.0.0-beta.1",
+    "assert": "^1.3.0",
+    "babel": "^6.3.26",
+    "body-parser": "^1.14.2",
+    "bootstrap": "^3.3.6",
+    "es6-promise": "3.0.2",
+    "es6-shim": "0.33.3",
+    "express": "4.13.3",
+    "html": "0.0.10",
+    "io": "^0.1.10",
+    "jade": "^1.11.0",
+    "lodash": "*",
+    "mime": "^1.3.4",
+    "moment": "^2.11.1",
+    "mongodb": "^2.1.4",
+    "numeral": "^1.5.3",
+    "reflect-metadata": "0.1.2",
+    "rxjs": "5.0.0-beta.0",
+    "socket.io": "^1.4.4",
+    "socket.io-client": "^1.4.4",
+    "systemjs": "0.19.16",
+    "winston": "^2.1.1",
+    "zone.js": "0.5.10"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.3.13",
+    "del": "2.2.0",
+    "gulp": "3.9.0",
+    "gulp-babel": "^6.1.1",
+    "gulp-concat": "2.6.0",
+    "gulp-minify-css": "^1.2.3",
+    "gulp-sass": "^2.1.1",
+    "gulp-sourcemaps": "1.6.0",
+    "gulp-typescript": "2.10.0",
+    "run-sequence": "1.1.5",
+    "concurrently": "^1.0.0"
+  }
+}

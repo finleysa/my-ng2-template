@@ -1,0 +1,31 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
+    base(href='/')
+    title Webmap2.0
+    link(rel='stylesheet', type='text/css', href='app/stylesheets/css/animate.css')
+    link(rel='stylesheet', type='text/css', href='app/stylesheets/css/style.css')
+      
+    script(src='libs/socket.io-client/socket.io.js')  
+    script(src='libs/angular2/bundles/angular2-polyfills.js')
+    script(src='libs/systemjs/dist/system.src.js')
+    script(src='libs/rxjs/bundles/Rx.js')
+    script(src='libs/angular2/bundles/angular2.dev.js')
+    script(src='libs/angular2/bundles/router.dev.js')
+    script(src='libs/angular2/bundles/http.dev.js')
+      
+    script.
+      System.config({
+        packages: {
+          app: {
+              format: 'register',
+              defaultExtension: 'js'
+          }
+        }
+      });
+      System.import('app/bootstrap')
+      .then(null, console.error.bind(console));
+  body
+    my-app
